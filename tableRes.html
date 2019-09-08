@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <title>Bord Bestilling</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/awesomefonts.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    </head>
+    <body class="pg table-page">
+    <script src="script/navBar.js"></script>
+
+
+        <div class="side-head">
+            <div class="container">
+                <div class="row">
+                    <div class="col-inline">
+                        <h1>BordBestilling</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bodyExceptNavbar">
+
+
+
+            <p>Bordbestilling må gjøres senest dagen før kl 22:00. Du vil først motta
+            en bekreftelse fra oss om at vi har mottatt din forespørsel, etterfulgt
+            av en endelig bekreftelse på om vi har kapasitet. Oppfordrer til å reservere
+            bord så tidlig som mulig da vi har stor pågang.</p>
+
+
+
+            <form id="bordbestilling" method="post" onsubmit="return validate();">
+              <fieldset>
+                <legend>Bordbestilling</legend>
+
+                <label for="antall" class="label">Antall </label>
+                <select id="antall" name="antall" class="input">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                </select>
+                <br>
+
+                <label for="date" class="label">Dato </label>
+                <input type="date" class="input" name="date" id="date" min="2018-11-11" value="2018-11-11" required="required">
+                <br>
+
+                <label for="time" class="label">Tid   </label>
+                <select id="time" class="input" name="time">
+                  <option value="18:00">18:00</option>
+                  <option value="18:30">18:30</option>
+                  <option value="19:00">19:00</option>
+                  <option value="19:30">19:30</option>
+                  <option value="20:00">20:00</option>
+                  <option value="20:30">20:30</option>
+                  <option value="21:00">21:00</option>
+                  <option value="21:30">21:30</option>
+                </select>
+                <br>
+
+                <label for="name" class="label">Navn</label>
+                <input type="text" class="input" name="navn" id="name" required="required">
+                <br>
+
+                <label for="phone" class="label">Tlf   </label>
+                <input type="number" class="input" name="phone" id="phone" min="10000000" max="99999999" required="required">
+                <br>
+                <input type="submit" class="input" name="submit" value="Bestill bord">
+              </fieldset>
+            </form>
+
+
+
+          </div>
+    <script src="script/footer.js"></script>
+        <script src="script/tableRes.js"></script>
+
+
+</body>
+</html>

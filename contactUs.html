@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <title>Kontakt Oss</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/awesomefonts.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    </head>
+
+    <body class="pg contact-page">
+      <script src="script/navBar.js"></script>
+
+        <div class="side-head">
+            <div class="container">
+                <div class="row">
+                    <div class="col-inline">
+                        <h1>Kontakt Oss!</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p id="headtext">Du finner oss i våre lokaler i Realfagsbygget på Gløshaugen</p>
+        <div class="kontakt-content">
+        <div class="container">
+        <div class="col-50 col-inline">
+          <h2 class="contactUsH2"><strong>Åpningstider:</strong></h2>
+          <p>Mandag-Fredag: 08:00-17:00</p>
+          <p>Lørdag: 10:00-17:00</p>
+          <h2 class="contactUsH2"><strong>Tlf:</strong></h2>
+          <p>42069420</p>
+          <h2 class="contactUsH2"><strong>E-Mail:</strong></h2>
+          <p>gløs.gourmet@ntnu.no</p>
+          <h2 class="contactUsH2"><strong>Adresse:</strong></h2>
+          <p>Høgskoleringen 5</p>
+          <br>
+          <p id="p1">Har du tips til forbedring? Ris eller ros kan gis i feltet under.</p>
+
+
+
+          <textarea name="msg" id="msgField" rows="5" cols="25" oninput="submitable()"></textarea>
+          <br>
+          <input type="submit" class="mapknapp" id="submitButton" name="submitButton" value="Send" onclick="submit()" disabled >
+          <p id="sent" style="color:#00AA00; font-weight:bold"></p>
+
+
+          <button  id="showMap" name="showMap" class="mapknapp"  onclick="showMap()">Vis kart </button>
+          <button  id="hideMap" name="hideMap" class="mapknapp" onclick="hideMap()">Skjul kart </button>
+        </div>
+
+        <div class="col-50 col-inline">
+          <div class="row3">
+            <img src="images/rbygg.jpg" alt="bilde av gløshaugen" id="rbygg">
+          </div>
+          <div class="row3">
+        <div id="map"></div>
+      </div>
+    </div>
+
+</div>
+      </div>
+      <script src="script/footer.js"></script>
+
+        <script src="script/contactUs.js"></script>
+        <script type="text/javascript" async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBOzGQm60E9waXCbVTSOdwT01ZNN3Ys19M&callback=initMap">
+        </script>
+        <script src="script/maps.js"></script>
+
+
+</body>
+</html>

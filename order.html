@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>MatBestilling</title>
+  <link rel="stylesheet" href ="css/style.css" type="text/css">
+  <link rel="stylesheet" href="css/awesomefonts.css" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+</head>
+<body class="pg order">
+    <script src="script/navBar.js"></script>
+    <div class="bs2">
+      <div class="container">
+        <div class="row100">
+          <div class="col-100">
+            <div class="bs">
+              <h1> Bestill Mat </h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <div class="plasseringListe">
+        <div class="ordreMeny">
+          <h2 id="meny"> Ordre </h2>
+          <ul id="prisListe"> </ul>
+          <div class="total">
+            <h2 id="h2total">Total: </h2>
+            <div id="noobsa2">
+            <output id="noobsa">0,-</output>
+          </div>
+             <button class="knapp" id="betal" onclick="location.href='order.html'">Betal </button>
+          </div>
+        </div>
+      </div>
+      <div id="order-popup" class="popup center">
+        <div class="popup-content" >
+          <h1 id="popuph1">hei </h1>
+          <span class="close">&times;</span>
+          <div class="bildeOrder">
+          <img id="hei" src="images/meny/Biff.jpeg" alt="bilde av mat"/>
+        </div>
+          <div id="antallItems">
+            <h3 id="pris"> Hei </h3>
+          <select id="antall" name="antall" class="input knapp">
+            <option selected value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+          <button class="knapp" id="leggtil">legg til</button>
+        </div>
+        <div id="beskrivelsep">
+          <p id="besk"></p>
+        </div>
+        </div>
+
+      </div>
+
+      <div class="mater">
+        <h2 class="mat">Forretter </h2><ul class ="matListe"> </ul>
+
+        <h2 class="mat"> Hovedretter </h2><ul class="matListe"> </ul>
+
+        <h2 class="mat"> Desserter </h2> <ul class="matListe"> </ul>
+
+        <h2 class="mat"> Drikke </h2> <ul class="matListe"> </ul> </div>
+        <div class="push">
+      </div>
+
+      <script src="script/footer.js"></script>
+      <script src="script/price.js"></script>
+    <script src="script/orderingPage.js"></script>
+    </body>
+    </html>
